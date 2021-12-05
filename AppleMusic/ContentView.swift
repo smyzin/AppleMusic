@@ -10,23 +10,34 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView {
-            LibraryView()
-                .tabItem {
-                    Image(systemName: "music.note.house")
-                    Text("Медиатека")
-                }
-            
-            Text("Радио")
-                .tabItem {
-                    Image(systemName: "dot.radiowaves.left.and.right")
-                    Text("Радио")
-                }
-            
-            Text("Поиск")
-                .tabItem {
-                    Image(systemName: "magnifyingglass")
-                    Text("Поиск")
-                }
+            VStack {
+                LibraryView()
+                Player()
+            }
+            .tabItem {
+                Image(systemName: "music.note.house")
+                Text("Медиатека")
+            }
+            VStack {
+                Spacer()
+                Text("Радио")
+                Spacer()
+                Player()
+            }
+            .tabItem {
+                Image(systemName: "dot.radiowaves.left.and.right")
+                Text("Радио")
+            }
+            VStack {
+                Spacer()
+                Text("Поиск")
+                Spacer()
+                Player()
+            }
+            .tabItem {
+                Image(systemName: "magnifyingglass")
+                Text("Поиск")
+            }
         }
         .accentColor(.red)
     }

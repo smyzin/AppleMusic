@@ -19,7 +19,6 @@ struct LibraryView: View {
                     .font(.system(size: 14))
                     .foregroundColor(.gray)
                     .multilineTextAlignment(.center)
-                    
             }
             .navigationTitle("Медиатека")
             .navigationBarItems(
@@ -28,8 +27,6 @@ struct LibraryView: View {
             )
         }
         .accentColor(.red)
-        
-        Player()
     }
 }
 
