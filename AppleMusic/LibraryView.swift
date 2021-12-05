@@ -22,10 +22,11 @@ struct LibraryView: View {
             }
             .navigationTitle("Медиатека")
             .navigationBarItems(
-                trailing: NavigationLink("Править", destination: Text("Second screen"))
+                trailing: NavigationLink("Править", destination: ListView())
                     .accentColor(.red)
             )
         }
+        .navigationBarBackButtonHidden(true)
         .accentColor(.red)
     }
 }
@@ -33,5 +34,6 @@ struct LibraryView: View {
 struct LibraryView_Previews: PreviewProvider {
     static var previews: some View {
         LibraryView()
+            .navigationBarBackButtonHidden(true)
     }
 }
