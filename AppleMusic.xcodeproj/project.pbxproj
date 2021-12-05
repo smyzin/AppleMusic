@@ -11,6 +11,8 @@
 		854DD4B9275D447400BA5E9B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854DD4B8275D447400BA5E9B /* ContentView.swift */; };
 		854DD4BB275D447800BA5E9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 854DD4BA275D447800BA5E9B /* Assets.xcassets */; };
 		854DD4BE275D447800BA5E9B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 854DD4BD275D447800BA5E9B /* Preview Assets.xcassets */; };
+		854DD4C8275D454B00BA5E9B /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854DD4C7275D454B00BA5E9B /* LibraryView.swift */; };
+		854DD4CA275D527200BA5E9B /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854DD4C9275D527200BA5E9B /* Player.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		854DD4BA275D447800BA5E9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		854DD4BD275D447800BA5E9B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		854DD4BF275D447800BA5E9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		854DD4C7275D454B00BA5E9B /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
+		854DD4C9275D527200BA5E9B /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 				854DD4BA275D447800BA5E9B /* Assets.xcassets */,
 				854DD4BF275D447800BA5E9B /* Info.plist */,
 				854DD4BC275D447800BA5E9B /* Preview Content */,
+				854DD4C7275D454B00BA5E9B /* LibraryView.swift */,
+				854DD4C9275D527200BA5E9B /* Player.swift */,
 			);
 			path = AppleMusic;
 			sourceTree = "<group>";
@@ -138,7 +144,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				854DD4CA275D527200BA5E9B /* Player.swift in Sources */,
 				854DD4B9275D447400BA5E9B /* ContentView.swift in Sources */,
+				854DD4C8275D454B00BA5E9B /* LibraryView.swift in Sources */,
 				854DD4B7275D447400BA5E9B /* AppleMusicApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
