@@ -1,28 +1,29 @@
 //
-//  Modules.swift
+//  OptionModel.swift
 //  AppleMusic
 //
-//  Created by Sergey Myzin on 05.12.2021.
+//  Created by Sergey Myzin on 11.12.2021.
 //
 
 import Foundation
 
+// MARK: - Options
 enum Option {
     case playlists, artists, albums, songs, tvShows, videoClips, genres, collections, authors, downloads, homeCollection
     
     var title: String {
         switch self {
-        case .playlists: return "Плейлисты"
-        case .artists: return "Артисты"
-        case .albums: return "Альбомы"
-        case .songs: return "Песни"
-        case .tvShows: return "Телешоу и  фильмы"
-        case .videoClips: return "Видеоклипы"
-        case .genres: return "Жанры"
-        case .collections: return "Сборники"
-        case .authors: return "Авторы"
-        case .downloads: return "Загружено"
-        case .homeCollection: return "Домашняя коллекция"
+        case .playlists: return "Playlists"
+        case .artists: return "Artists"
+        case .albums: return "Albums"
+        case .songs: return "Songs"
+        case .tvShows: return "TV & Movies"
+        case .videoClips: return "Music Videos"
+        case .genres: return "Genres"
+        case .collections: return "Compilations"
+        case .authors: return "Composers"
+        case .downloads: return "Downloaded"
+        case .homeCollection: return "Home Sharing"
         }
     }
     
@@ -43,37 +44,11 @@ enum Option {
     }
 }
 
-enum Tabs {
-    case media, radio, search
-    
-    var title: String {
-        switch self {
-        case .media: return "Медиатека"
-        case .radio: return "Радио"
-        case .search: return "Поиск"
-        }
-    }
-    
-    var icon: String {
-        switch self {
-        case .media: return "music.note.house"
-        case .radio: return "dot.radiowaves.left.and.right"
-        case .search: return "magnifyingglass"
-        }
-    }
-}
-
 struct OptionModel {
     var id = UUID()
     var name: String
     var icon: String
     var checked: Bool
-}
-
-struct TabModel {
-//    var id = UUID()
-    var name: String
-    var icon: String
 }
 
 let optionsList = [
@@ -88,10 +63,4 @@ let optionsList = [
     OptionModel(name: Option.authors.title, icon: Option.authors.icon, checked: false),
     OptionModel(name: Option.downloads.title, icon: Option.downloads.icon, checked: true),
     OptionModel(name: Option.homeCollection.title, icon: Option.homeCollection.icon, checked: true),
-]
-
-let tabsList = [
-    TabModel(name: Tabs.media.title, icon: Tabs.media.icon),
-    TabModel(name: Tabs.radio.title, icon: Tabs.radio.icon),
-    TabModel(name: Tabs.search.title, icon: Tabs.search.icon),
 ]

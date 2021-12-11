@@ -19,9 +19,9 @@ struct ListView: View {
         }
         .listStyle(InsetListStyle())
         .edgesIgnoringSafeArea(.all)
-        .navigationBarTitle("Медиатека", displayMode: .large)
+        .navigationBarTitle(Tabs.media.title, displayMode: .large)
         .navigationBarItems(
-            trailing: NavigationLink("Готово", destination: MediaView().navigationBarBackButtonHidden(true))
+            trailing: NavigationLink("Done", destination: MediaView().navigationBarBackButtonHidden(true))
                 .accentColor(.red)
         )
     }

@@ -10,18 +10,18 @@ import SwiftUI
 struct MediaView: View {
     var body: some View {
         VStack {
-            Text("Ищите свою музыку?")
+            Text("Looking for your music?")
                 .font(.system(size: 20))
                 .bold()
-            Text("Здесь появится купленная Вами в iTunes Store музыка")
+            Text("Here will be the music you bought in the iTunes Store")
                 .padding([.trailing, .leading], 25)
                 .font(.system(size: 14))
                 .foregroundColor(.gray)
                 .multilineTextAlignment(.center)
         }
-        .navigationBarTitle("Медиатека", displayMode: .large)
+        .navigationBarTitle(Tabs.media.title, displayMode: .large)
         .navigationBarItems(
-            trailing: NavigationLink("Править", destination: ListView().navigationBarBackButtonHidden(true))
+            trailing: NavigationLink("Edit", destination: ListView().navigationBarBackButtonHidden(true))
                 .accentColor(.red)
         )
     }

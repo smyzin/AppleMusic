@@ -12,7 +12,7 @@ struct LibraryView: View {
         NavigationView {
             MediaView()
         }
-        .navigationBarTitle("Медиатека", displayMode: .large)
+        .navigationBarTitle(Tabs.media.title, displayMode: .large)
         .navigationBarBackButtonHidden(true)
         .accentColor(.red)
     }

@@ -8,17 +8,22 @@
 import SwiftUI
 
 struct RadioView: View {
-    private let rows = [GridItem(.adaptive(minimum: 300))]
-    private let columns = [GridItem(.adaptive(minimum: 400))]
+    private let rows = [GridItem(.adaptive(minimum: 200))]
+    private let columns = [GridItem(.adaptive(minimum: 300))]
     
     
     var body: some View {
         NavigationView {
             ScrollView(.vertical) {
-                Text("Radio view")
+                Divider()
+                FeaturedList(rows: rows)
+                Divider()
+                    .padding([.top, .bottom], 5)
+                    .foregroundColor(Color(UIColor.systemGray4))
+                StationList(columns: columns)
             }
             .padding([.leading], 15)
-            .navigationBarTitle("Радио", displayMode: .large)
+            .navigationBarTitle(Tabs.radio.title, displayMode: .automatic)
             .navigationBarBackButtonHidden(true)
         }
         
