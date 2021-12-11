@@ -10,21 +10,7 @@ import SwiftUI
 struct LibraryView: View {
     var body: some View {
         NavigationView {
-            VStack {
-                Text("Ищите свою музыку?")
-                    .font(.system(size: 20))
-                    .bold()
-                Text("Здесь появится купленная Вами в iTunes Store музыка")
-                    .padding([.trailing, .leading], 25)
-                    .font(.system(size: 14))
-                    .foregroundColor(.gray)
-                    .multilineTextAlignment(.center)
-            }
-            .navigationTitle("Медиатека")
-            .navigationBarItems(
-                trailing: NavigationLink("Править", destination: ListView())
-                    .accentColor(.red)
-            )
+            MediaView()
         }
         .navigationBarBackButtonHidden(true)
         .accentColor(.red)
