@@ -15,28 +15,28 @@ struct ContentView: View {
                 Player()
             }
             .tabItem {
-                Image(systemName: "music.note.house")
-                Text("Медиатека")
+                Image(systemName: Tabs.media.icon)
+                Text(Tabs.media.title)
             }
             VStack {
                 Spacer()
-                Text("Радио")
+                Text(Tabs.radio.title)
                 Spacer()
                 Player()
             }
             .tabItem {
-                Image(systemName: "dot.radiowaves.left.and.right")
-                Text("Радио")
+                Image(systemName: Tabs.radio.icon)
+                Text(Tabs.radio.title)
             }
             VStack {
                 Spacer()
-                Text("Поиск")
+                Text(Tabs.search.title)
                 Spacer()
                 Player()
             }
             .tabItem {
-                Image(systemName: "magnifyingglass")
-                Text("Поиск")
+                Image(systemName: Tabs.search.icon)
+                Text(Tabs.search.title)
             }
         }
         .accentColor(.red)
