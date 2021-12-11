@@ -19,9 +19,7 @@ struct ContentView: View {
                 Text(Tabs.media.title)
             }
             VStack {
-                Spacer()
-                Text(Tabs.radio.title)
-                Spacer()
+                RadioView()
                 Player()
             }
             .tabItem {
