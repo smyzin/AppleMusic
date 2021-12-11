@@ -19,7 +19,7 @@ struct MediaView: View {
                 .foregroundColor(.gray)
                 .multilineTextAlignment(.center)
         }
-        .navigationTitle("Медиатека")
+        .navigationBarTitle("Медиатека", displayMode: .large)
         .navigationBarItems(
             trailing: NavigationLink("Править", destination: ListView().navigationBarBackButtonHidden(true))
                 .accentColor(.red)

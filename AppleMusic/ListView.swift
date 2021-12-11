@@ -16,10 +16,9 @@ struct ListView: View {
                 OptionCell(option: option)
             }
             .onMove(perform: move)
-            .listStyle(DefaultListStyle())
-            .edgesIgnoringSafeArea(.all)
-            
         }
+        .listStyle(InsetListStyle())
+        .edgesIgnoringSafeArea(.all)
         .navigationBarTitle("Медиатека", displayMode: .large)
         .navigationBarItems(
             trailing: NavigationLink("Готово", destination: MediaView().navigationBarBackButtonHidden(true))
@@ -34,7 +33,6 @@ struct ListView: View {
 
 struct ListView_Previews: PreviewProvider {
     static var previews: some View {
-        
         ListView()
     }
 }
