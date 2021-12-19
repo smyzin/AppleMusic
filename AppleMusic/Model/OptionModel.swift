@@ -52,15 +52,15 @@ struct OptionModel {
 }
 
 let optionsList = [
-    OptionModel(name: Option.playlists.title, icon: Option.playlists.icon, checked: true),
-    OptionModel(name: Option.artists.title, icon: Option.artists.icon, checked: true),
-    OptionModel(name: Option.albums.title, icon: Option.albums.icon, checked: true),
+    OptionModel(name: Option.playlists.title, icon: Option.playlists.icon, checked: false),
+    OptionModel(name: Option.artists.title, icon: Option.artists.icon, checked: false),
+    OptionModel(name: Option.albums.title, icon: Option.albums.icon, checked: false),
     OptionModel(name: Option.songs.title, icon: Option.songs.icon, checked: false),
     OptionModel(name: Option.tvShows.title, icon: Option.tvShows.icon, checked: false),
-    OptionModel(name: Option.videoClips.title, icon: Option.videoClips.icon, checked: true),
+    OptionModel(name: Option.videoClips.title, icon: Option.videoClips.icon, checked: false),
     OptionModel(name: Option.genres.title, icon: Option.genres.icon, checked: false),
     OptionModel(name: Option.collections.title, icon: Option.collections.icon, checked: false),
     OptionModel(name: Option.authors.title, icon: Option.authors.icon, checked: false),
-    OptionModel(name: Option.downloads.title, icon: Option.downloads.icon, checked: true),
-    OptionModel(name: Option.homeCollection.title, icon: Option.homeCollection.icon, checked: true),
+    OptionModel(name: Option.downloads.title, icon: Option.downloads.icon, checked: false),
+    OptionModel(name: Option.homeCollection.title, icon: Option.homeCollection.icon, checked: false),
 ]

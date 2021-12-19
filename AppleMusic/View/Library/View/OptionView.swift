@@ -14,16 +14,16 @@ struct ListView: View {
         List {
             ForEach(options, id: \.self.id) { option in
                 OptionCell(option: option)
-            }
-            .onMove(perform: move)
+            }.onMove(perform: move)
+            .listRowInsets(EdgeInsets(top: 0, leading: -24, // workaround !!
+                            bottom: 0, trailing: 0))  
         }
-        .listStyle(InsetListStyle())
-        .edgesIgnoringSafeArea(.all)
+        .deleteDisabled(true)
+        .listStyle(PlainListStyle())
+        .environment(\.editMode, .constant(.active))
         .navigationBarTitle(Tabs.media.title, displayMode: .large)
-        .navigationBarItems(
-            trailing: NavigationLink("Done", destination: MediaView().navigationBarBackButtonHidden(true))
-                .accentColor(.red)
-        )
+        .navigationBarItems(trailing: NavigationLink("Done", destination: MediaView().navigationBarBackButtonHidden(true)))
+        .accentColor(.red)
     }
     
     private func move(from source: IndexSet, to destination: Int) {
