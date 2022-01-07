@@ -26,7 +26,6 @@ struct RadioView: View {
             .navigationBarTitle(Tabs.radio.title, displayMode: .automatic)
             .navigationBarBackButtonHidden(true)
         }
-        
     }
 }
 
