@@ -9,35 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        TabView {
-            VStack {
-                LibraryView()
-                Player()
-            }
-            .tabItem {
-                Image(systemName: Tabs.media.icon)
-                Text(Tabs.media.title)
-            }
-            VStack {
-                RadioView()
-                Player()
-            }
-            .tabItem {
-                Image(systemName: Tabs.radio.icon)
-                Text(Tabs.radio.title)
-            }
-            VStack {
-                Spacer()
-                Text(Tabs.search.title)
-                Spacer()
-                Player()
-            }
-            .tabItem {
-                Image(systemName: Tabs.search.icon)
-                Text(Tabs.search.title)
-            }
-        }
-        .accentColor(.red)
+        TabBarView()
     }
 }
 
