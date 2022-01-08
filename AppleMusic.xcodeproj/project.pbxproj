@@ -13,6 +13,11 @@
 		854DD4BE275D447800BA5E9B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 854DD4BD275D447800BA5E9B /* Preview Assets.xcassets */; };
 		854DD4C8275D454B00BA5E9B /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854DD4C7275D454B00BA5E9B /* LibraryView.swift */; };
 		854DD4CA275D527200BA5E9B /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854DD4C9275D527200BA5E9B /* Player.swift */; };
+		854DD4CC275D5D3B00BA5E9B /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854DD4CB275D5D3B00BA5E9B /* ListView.swift */; };
+		854DD4CE275D5DCB00BA5E9B /* Modules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854DD4CD275D5DCB00BA5E9B /* Modules.swift */; };
+		85F048E92764CE51004D2E69 /* OptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F048E82764CE51004D2E69 /* OptionCell.swift */; };
+		85F048EB2764E665004D2E69 /* MediaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F048EA2764E665004D2E69 /* MediaView.swift */; };
+		85F048ED2765138C004D2E69 /* RadioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85F048EC2765138C004D2E69 /* RadioView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		854DD4BF275D447800BA5E9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		854DD4C7275D454B00BA5E9B /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
 		854DD4C9275D527200BA5E9B /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		854DD4CB275D5D3B00BA5E9B /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		854DD4CD275D5DCB00BA5E9B /* Modules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modules.swift; sourceTree = "<group>"; };
+		85F048E82764CE51004D2E69 /* OptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionCell.swift; sourceTree = "<group>"; };
+		85F048EA2764E665004D2E69 /* MediaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaView.swift; sourceTree = "<group>"; };
+		85F048EC2765138C004D2E69 /* RadioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +73,11 @@
 				854DD4BC275D447800BA5E9B /* Preview Content */,
 				854DD4C7275D454B00BA5E9B /* LibraryView.swift */,
 				854DD4C9275D527200BA5E9B /* Player.swift */,
+				854DD4CB275D5D3B00BA5E9B /* ListView.swift */,
+				854DD4CD275D5DCB00BA5E9B /* Modules.swift */,
+				85F048E82764CE51004D2E69 /* OptionCell.swift */,
+				85F048EA2764E665004D2E69 /* MediaView.swift */,
+				85F048EC2765138C004D2E69 /* RadioView.swift */,
 			);
 			path = AppleMusic;
 			sourceTree = "<group>";
@@ -145,7 +160,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				854DD4CA275D527200BA5E9B /* Player.swift in Sources */,
+				854DD4CE275D5DCB00BA5E9B /* Modules.swift in Sources */,
+				85F048E92764CE51004D2E69 /* OptionCell.swift in Sources */,
 				854DD4B9275D447400BA5E9B /* ContentView.swift in Sources */,
+				854DD4CC275D5D3B00BA5E9B /* ListView.swift in Sources */,
+				85F048EB2764E665004D2E69 /* MediaView.swift in Sources */,
+				85F048ED2765138C004D2E69 /* RadioView.swift in Sources */,
 				854DD4C8275D454B00BA5E9B /* LibraryView.swift in Sources */,
 				854DD4B7275D447400BA5E9B /* AppleMusicApp.swift in Sources */,
 			);
