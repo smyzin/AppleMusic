@@ -24,22 +24,22 @@ struct Player: View {
                 Button {
                     print("Play was pressed")
                 } label: {
-                    Image(systemName: "play.fill")
-                        .font(.system(size: 18))
+                    Image(systemName: Icons.play.icon)
+                        .font(.system(size: Fonts.m.size))
                         .accentColor(.black)
                 }
-                .padding([.trailing, .vertical], 8)
+                .padding([.trailing, .vertical], Paddings.xs.size)
                 Button {
                     print("Forward was pressed")
                 } label: {
-                    Image(systemName: "forward.fill")
-                        .font(.system(size: 18))
+                    Image(systemName: Icons.forward.icon)
+                        .font(.system(size: Fonts.m.size))
                         .accentColor(.black)
                 }
-                .padding([.all], 8)
+                .padding([.all], Paddings.xs.size)
             }
         }
-        .padding([.top, .bottom, .trailing, .leading], 10)
+        .padding([.top, .bottom, .trailing, .leading], Paddings.s.size)
         .background(Color(UIColor.systemGray6))
     }
 }

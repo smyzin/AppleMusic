@@ -15,7 +15,7 @@ struct OptionCell: View {
             option.checked = !option.checked
         } label: {
             HStack {
-                Image(systemName: option.checked ? "checkmark.circle.fill" : "circle")
+                Image(systemName: option.checked ? Icons.circle_checked.icon : Icons.circle.icon)
                     .foregroundColor(option.checked ? .red : Color(UIColor.systemGray3))
                 Image(systemName: option.icon)
                     .foregroundColor(.red)

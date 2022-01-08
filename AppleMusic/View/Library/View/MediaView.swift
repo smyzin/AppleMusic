@@ -11,11 +11,11 @@ struct MediaView: View {
     var body: some View {
         VStack {
             Text("Looking for your music?")
-                .font(.system(size: 23))
+                .font(.system(size: Fonts.xxl.size))
                 .bold()
             Text("Here will be the music you bought in the iTunes Store")
-                .padding([.trailing, .leading], 25)
-                .font(.system(size: 16))
+                .padding([.trailing, .leading], Paddings.l.size)
+                .font(.system(size: Fonts.s.size))
                 .foregroundColor(.gray)
                 .multilineTextAlignment(.center)
         }

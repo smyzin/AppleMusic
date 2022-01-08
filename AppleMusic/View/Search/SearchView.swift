@@ -16,7 +16,7 @@ struct SearchView: View {
                 SearchBar(text: .constant(""))
                 CategoryView()
             }
-            .padding([.leading, .trailing], 15)
+            .padding([.leading, .trailing], Paddings.m.size)
             .navigationBarTitle(Tabs.search.title, displayMode: .automatic)
             .navigationBarBackButtonHidden(true)
         }

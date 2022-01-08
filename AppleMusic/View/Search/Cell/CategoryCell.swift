@@ -29,12 +29,12 @@ struct ImageOverlay: View {
     var body: some View {
         ZStack {
             Text(name.capitalized)
-                .font(.system(size: 16))
+                .font(.system(size: Fonts.s.size))
                 .fontWeight(.bold)
-                .padding(6)
+                .padding(Paddings.small.size)
                 .foregroundColor(Color(.systemBackground))
         }
-        .padding(5)
+        .padding(Paddings.eSmall.size)
     }
 }
 

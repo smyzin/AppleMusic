@@ -16,11 +16,11 @@ struct SearchBar: View {
             Rectangle()
                 .foregroundColor(Color(.systemGray6))
             HStack {
-                Image(systemName: "magnifyingglass")
-                    .padding([.leading], 10)
+                Image(systemName: Icons.search.icon)
+                    .padding([.leading], Paddings.s.size)
                 TextField("Search ...", text: $text)
-                    .padding([.top, .bottom], 7)
-                    .padding([.trailing], 25)
+                    .padding([.top, .bottom], Paddings.xxs.size)
+                    .padding([.trailing], Paddings.l.size)
                     .background(Color(.systemGray6))
                     .cornerRadius(8)
                     .onTapGesture {
@@ -28,11 +28,9 @@ struct SearchBar: View {
                     }
             }
             .foregroundColor(.gray)
-//            .padding([.leading], 10)
         }
         .frame(height: 40)
         .cornerRadius(13)
-//        .padding()
         
         if isEditing {
             Button(action: {
@@ -41,7 +39,7 @@ struct SearchBar: View {
             }) {
                 Text("Cancel")
             }
-            .padding(.trailing, 10)
+            .padding(.trailing, Paddings.s.size)
             .transition(.move(edge: .trailing))
             .animation(.default)
         }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8510D18C2788D494009753EA /* Variables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8510D18B2788D494009753EA /* Variables.swift */; };
 		854DD4B7275D447400BA5E9B /* AppleMusicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854DD4B6275D447400BA5E9B /* AppleMusicApp.swift */; };
 		854DD4B9275D447400BA5E9B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854DD4B8275D447400BA5E9B /* ContentView.swift */; };
 		854DD4BB275D447800BA5E9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 854DD4BA275D447800BA5E9B /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8510D18B2788D494009753EA /* Variables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Variables.swift; sourceTree = "<group>"; };
 		854DD4B3275D447400BA5E9B /* AppleMusic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleMusic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		854DD4B6275D447400BA5E9B /* AppleMusicApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleMusicApp.swift; sourceTree = "<group>"; };
 		854DD4B8275D447400BA5E9B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -270,6 +272,7 @@
 				85F048FE276533BB004D2E69 /* StationModel.swift */,
 				85B3CC7C276F921400427583 /* CategoryModel.swift */,
 				85B3CC7E276F93EB00427583 /* Colors.swift */,
+				8510D18B2788D494009753EA /* Variables.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8510D18C2788D494009753EA /* Variables.swift in Sources */,
 				85F048FF276533BB004D2E69 /* StationModel.swift in Sources */,
 				85B3CC7F276F93EB00427583 /* Colors.swift in Sources */,
 				854DD4CA275D527200BA5E9B /* Player.swift in Sources */,

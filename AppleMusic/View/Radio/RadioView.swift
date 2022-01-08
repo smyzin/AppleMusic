@@ -18,11 +18,11 @@ struct RadioView: View {
                 Divider()
                 FeaturedList(rows: rows)
                 Divider()
-                    .padding([.top, .bottom], 5)
+                    .padding([.top, .bottom], Paddings.eSmall.size)
                     .foregroundColor(Color(UIColor.systemGray4))
                 StationList(columns: columns)
             }
-            .padding([.leading], 15)
+            .padding([.leading], Paddings.m.size)
             .navigationBarTitle(Tabs.radio.title, displayMode: .automatic)
             .navigationBarBackButtonHidden(true)
         }

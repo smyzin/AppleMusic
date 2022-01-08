@@ -13,12 +13,12 @@ struct StationList: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text("Stations").bold().font(.system(size: 19)).frame(alignment: .leading)
+            Text("Stations").bold().font(.system(size: Fonts.l.size)).frame(alignment: .leading)
             LazyVGrid(columns: columns, alignment: .leading) {
                 ForEach(stations, id: \.self.id) { station in
                     StationCell(cell: station)
                 }
-                .padding([.top, .bottom], 5)
+                .padding([.top, .bottom], Paddings.eSmall.size)
             }
         }
     }
