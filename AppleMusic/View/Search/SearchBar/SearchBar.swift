@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SearchBar: View {
     @Binding var text: String
-    @State private var isEditing = false
+//    @State private var isEditing = false
     
     var body: some View {
         ZStack {
@@ -22,27 +22,27 @@ struct SearchBar: View {
                     .padding([.top, .bottom], Paddings.xxs.size)
                     .padding([.trailing], Paddings.l.size)
                     .background(Color(.systemGray6))
-                    .cornerRadius(8)
-                    .onTapGesture {
-                        self.isEditing = true
-                    }
+                    .cornerRadius(Radius.r7)
+//                    .onTapGesture {
+//                        self.isEditing = true
+//                    }
             }
             .foregroundColor(.gray)
         }
         .frame(height: 40)
-        .cornerRadius(13)
+        .cornerRadius(Radius.r13)
         
-        if isEditing {
-            Button(action: {
-                self.isEditing = false
-                self.text = ""
-            }) {
-                Text("Cancel")
-            }
-            .padding(.trailing, Paddings.s.size)
-            .transition(.move(edge: .trailing))
-            .animation(.default)
-        }
+//        if isEditing {
+//            Button(action: {
+//                self.isEditing = false
+//                self.text = ""
+//            }) {
+//                Text("Cancel")
+//            }
+//            .padding(.trailing, Paddings.s.size)
+//            .transition(.move(edge: .trailing))
+//            .animation(.default)
+//        }
     }
 }
 

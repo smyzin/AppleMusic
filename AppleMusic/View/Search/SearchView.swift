@@ -8,17 +8,22 @@
 import SwiftUI
 
 struct SearchView: View {
-    private let columns = [GridItem(.adaptive(minimum: 160))]
+    @State private var categories = categoryList
+    @State private var searchText = ""
+    @State private var isOn = false
     
     var body: some View {
         NavigationView {
-            ScrollView(.vertical) {
-                SearchBar(text: .constant(""))
-                CategoryView()
+            VStack(alignment: .leading) {
+                SearchBar(text: $searchText)
+                ScrollView(.vertical) {
+                    searchText.isEmpty
+                    ? AnyView(CategoryView())
+                    : AnyView(CategorySearchView(searchText: $searchText))
+                }
             }
             .padding([.leading, .trailing], Paddings.m.size)
             .navigationBarTitle(Tabs.search.title, displayMode: .automatic)
-            .navigationBarBackButtonHidden(true)
         }
     }
 }

@@ -7,6 +7,7 @@
 
 import Foundation
 
+let searchCategoryBrowser = "Browse Categories"
 // MARK: - Category
 struct Category {
     var id = UUID()

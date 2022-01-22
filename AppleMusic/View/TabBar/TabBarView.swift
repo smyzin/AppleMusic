@@ -8,33 +8,37 @@
 import SwiftUI
 
 struct TabBarView: View {
+    @State var isOpen: Bool = false
+    
     var body: some View {
-        TabView {
-            VStack {
-                LibraryView()
-                Player()
-            }
-            .tabItem {
-                Image(systemName: Tabs.media.icon)
-                Text(Tabs.media.title)
-            }
-            VStack {
-                RadioView()
-                Player()
-            }
-            .tabItem {
-                Image(systemName: Tabs.radio.icon)
-                Text(Tabs.radio.title)
-            }
-            VStack {
-                SearchView()
-            }
-            .tabItem {
-                Image(systemName: Tabs.search.icon)
-                Text(Tabs.search.title)
+        ZStack(alignment: .bottom) {
+            TabView {
+                LibraryView().padding([.bottom], Constants.layoutOffset)
+                .tabItem {
+                    Image(systemName: Tabs.media.icon)
+                    Text(Tabs.media.title)
+                }
+                RadioView().padding([.bottom], Constants.layoutOffset)
+                .tabItem {
+                    Image(systemName: Tabs.radio.icon)
+                    Text(Tabs.radio.title)
+                }
+                SearchView().padding([.bottom], Constants.layoutOffset)
+                .tabItem {
+                    Image(systemName: Tabs.search.icon)
+                    Text(Tabs.search.title)
+                }
+            }.accentColor(.red)
+            
+            Player(isOpen: $isOpen).offset(x: 0, y: Constants.playerOffset)
+            
+            if isOpen {
+                BottomSheetView(isOpen: $isOpen, maxHeight: 900) {
+                    PlayerFull()
+                }.edgesIgnoringSafeArea(.all)
+
             }
         }
-        .accentColor(.red)
     }
 }
 

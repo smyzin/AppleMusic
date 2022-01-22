@@ -12,22 +12,15 @@ struct CategoryListView: View {
     @State private var categories = categoryList
     
     var body: some View {
-        NavigationView {
-            VStack(alignment: .leading) {
-                Text("Search by category")
-                    .bold().font(.system(size: Fonts.xl.size)).frame(alignment: .leading)
-                    .padding([.top, .bottom], Paddings.s.size)
-                LazyVGrid(columns: columns) {
-                    ForEach(categories, id: \.self.id) { category in
-                        CategoryCell(cell: category)
-                    }
+        VStack(alignment: .leading) {
+            Text("Search by category")
+                .bold().font(.system(size: Fonts.xl.size)).frame(alignment: .leading)
+                .padding([.top, .bottom], Paddings.s.size)
+            LazyVGrid(columns: columns) {
+                ForEach(categories, id: \.self.id) { category in
+                    CategoryCell(cell: category)
                 }
             }
-            NavigationLink(destination: CategoryDetails()) {
-                Text("Do Something")
-            }
-            .navigationBarTitle(Tabs.search.title, displayMode: .automatic)
-            .navigationBarBackButtonHidden(true)
         }
     }
 }

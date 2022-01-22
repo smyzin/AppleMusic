@@ -16,7 +16,7 @@ struct RadioView: View {
         NavigationView {
             ScrollView(.vertical) {
                 Divider()
-                FeaturedList(rows: rows)
+                FeaturedList(rows: rows, featuredType: true)
                 Divider()
                     .padding([.top, .bottom], Paddings.eSmall.size)
                     .foregroundColor(Color(UIColor.systemGray4))

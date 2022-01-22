@@ -12,7 +12,7 @@ struct FeaturedCell: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text("featured Station")
+            Text(cell.category)
                 .textCase(.uppercase)
                 .font(.system(size: Fonts.xxs.size))
                 .foregroundColor(.gray)
@@ -32,6 +32,6 @@ struct FeaturedCell: View {
 
 struct FeaturedCell_Previews: PreviewProvider {
     static var previews: some View {
-        FeaturedCell(cell: Featured(id: UUID(), name: "Some station", author: "Apple Music", image: "Item_1"))
+        FeaturedCell(cell: Featured(id: UUID(), category: "Some category", name: "Some station", author: "Apple Music", image: "Item_1"))
     }
 }

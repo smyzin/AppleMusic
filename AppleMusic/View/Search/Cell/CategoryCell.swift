@@ -17,7 +17,7 @@ struct CategoryCell: View {
                 .scaledToFill()
                 .frame(width: 170, height: 140)
                 .colorMultiply(Color.random)
-                .cornerRadius(7.0)
+                .cornerRadius(Radius.r7)
                 .overlay(ImageOverlay(name: cell.name), alignment: .bottomLeading)
         }
     }
