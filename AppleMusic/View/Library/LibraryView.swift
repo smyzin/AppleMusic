@@ -12,25 +12,10 @@ struct LibraryView: View {
     
     var body: some View {
         NavigationView {
-//            if self.editMode == .active {
-////                NavigationLink(
-////                    destination: ListView()) {
-////                    Text("Edit")
-////                }
-////                .padding()
-//                ListView()
-//            } else {
-//                NavigationLink(
-//                    destination: MediaView()) {
-//                    Text("Done")
-//                }
-//                .padding()
-                MediaView()
-//            }
+            MediaView()
         }
         .navigationBarTitle(Tabs.media.title, displayMode: .large)
         .navigationBarBackButtonHidden(true)
-//        .environment(\.editMode, $editMode)
         .accentColor(.red)
     }
 }

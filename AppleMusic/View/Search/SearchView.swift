@@ -8,8 +8,23 @@
 import SwiftUI
 
 struct SearchView: View {
+    @State private var categories = categoryList
+    @State private var searchText = ""
+    @State private var isOn = false
+    
     var body: some View {
-        Text("Search view will be here soon!")
+        NavigationView {
+            VStack(alignment: .leading) {
+                SearchBar(text: $searchText)
+                ScrollView(.vertical) {
+                    searchText.isEmpty
+                    ? AnyView(CategoryView())
+                    : AnyView(CategorySearchView(searchText: $searchText))
+                }
+            }
+            .padding([.leading, .trailing], Paddings.m.size)
+            .navigationBarTitle(Tabs.search.title, displayMode: .automatic)
+        }
     }
 }
 

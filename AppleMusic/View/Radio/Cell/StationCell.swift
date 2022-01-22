@@ -19,10 +19,10 @@ struct StationCell: View {
             VStack(alignment: .leading) {
                 Spacer()
                 Text(cell.name.capitalized)
-                    .font(.system(size: 18))
+                    .font(.system(size: Fonts.m.size))
                     .foregroundColor(Color(UIColor.label))
                 Text(cell.description.capitalized)
-                    .font(.system(size: 13))
+                    .font(.system(size: Fonts.xs.size))
                     .foregroundColor(.gray)
                 Spacer()
                 Divider()

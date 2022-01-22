@@ -16,17 +16,16 @@ struct RadioView: View {
         NavigationView {
             ScrollView(.vertical) {
                 Divider()
-                FeaturedList(rows: rows)
+                FeaturedList(rows: rows, featuredType: true)
                 Divider()
-                    .padding([.top, .bottom], 5)
+                    .padding([.top, .bottom], Paddings.eSmall.size)
                     .foregroundColor(Color(UIColor.systemGray4))
                 StationList(columns: columns)
             }
-            .padding([.leading], 15)
+            .padding([.leading], Paddings.m.size)
             .navigationBarTitle(Tabs.radio.title, displayMode: .automatic)
             .navigationBarBackButtonHidden(true)
         }
-        
     }
 }
 
